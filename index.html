@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Lic. Nut. Linda Álvarez · Nutrición Clínica y Deportiva</title>
+<meta name="description" content="Consulta de nutrición clínica y deportiva en línea y presencial con la Lic. Nut. Linda Álvarez (Céd. 6940933). Planes personalizados, sin dietas restrictivas." />
+
+<!-- Open Graph / WhatsApp -->
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Lic. Nut. Linda Álvarez · Nutrición Integral" />
+<meta property="og:description" content="Nutrición clínica y deportiva. Planes personalizados, basados en evidencia, sin dietas restrictivas. En línea y presencial." />
+<meta property="og:image" content="og.jpg" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="theme-color" content="#2f3d2c" />
+<link rel="apple-touch-icon" href="icon.jpg" />
+<link rel="icon" type="image/jpeg" href="icon.jpg" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Hanken+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+/* ============ TOKENS ============ */
+:root{
+  --bg:#F6F4EC;          /* crema clínica */
+  --bg-2:#EFEBDE;        /* crema más cálida */
+  --ink:#23291E;         /* tinta verde-negra */
+  --ink-soft:#56604B;    /* texto secundario */
+  --olive:#2F3D2C;       /* olivo profundo (ancla) */
+  --olive-2:#465A3F;
+  --sage:#8A9A63;        /* sage acento */
+  --sage-soft:#C3CBA6;
+  --clay:#C97B4F;        /* arcilla cálida, uso mínimo */
+  --line:#D9D4C3;
+  --white:#FCFBF6;
+  --shadow:0 14px 40px -18px rgba(35,41,30,.35);
+  --radius:18px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--bg);color:var(--ink);
+  font-family:"Hanken Grotesk",system-ui,sans-serif;
+  font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;
+}
+h1,h2,h3{font-family:"Fraunces",Georgia,serif;font-weight:500;line-height:1.12;letter-spacing:-.01em;margin:0}
+img{max-width:100%;display:block}
+a{color:inherit}
+.wrap{max-width:1140px;margin:0 auto;padding:0 22px}
+.eyebrow{font-family:"Hanken Grotesk";font-weight:600;font-size:.74rem;letter-spacing:.18em;text-transform:uppercase;color:var(--sage);display:inline-flex;align-items:center;gap:.55rem}
+.eyebrow::before{content:"";width:26px;height:1px;background:var(--sage)}
+.muted{color:var(--ink-soft)}
+.btn{cursor:pointer;border:0;font-family:inherit;font-weight:600;font-size:1rem;border-radius:999px;padding:.85rem 1.5rem;transition:.18s transform,.18s box-shadow,.18s background;display:inline-flex;align-items:center;gap:.5rem;text-decoration:none}
+.btn:active{transform:translateY(1px)}
+.btn-primary{background:var(--olive);color:var(--white)}
+.btn-primary:hover{background:var(--olive-2);box-shadow:var(--shadow)}
+.btn-ghost{background:transparent;color:var(--olive);border:1.5px solid var(--olive)}
+.btn-ghost:hover{background:var(--olive);color:var(--white)}
+.btn-wa{background:#1faf54;color:#fff}
+.btn-wa:hover{background:#178c43}
+.btn-block{width:100%;justify-content:center}
+:focus-visible{outline:3px solid var(--sage);outline-offset:2px}
+
+/* ============ SELLO BOTÁNICO (firma) ============ */
+.seal{display:inline-block}
+.seal svg{display:block}
+
+/* ============ NAV ============ */
+header.nav{position:sticky;top:0;z-index:50;background:rgba(246,244,236,.86);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;height:66px}
+.brand{display:flex;align-items:center;gap:.65rem;font-family:"Fraunces";font-size:1.18rem;font-weight:600;color:var(--olive);text-decoration:none}
+.brand small{display:block;font-family:"Hanken Grotesk";font-size:.6rem;letter-spacing:.16em;text-transform:uppercase;color:var(--sage);font-weight:600}
+.nav-links{display:flex;align-items:center;gap:1.6rem}
+.nav-links a{text-decoration:none;font-weight:500;font-size:.95rem;color:var(--ink-soft)}
+.nav-links a:hover{color:var(--olive)}
+.nav-cta{display:flex;align-items:center;gap:.6rem}
+.hamb{display:none;background:none;border:0;cursor:pointer;padding:8px}
+.hamb span{display:block;width:24px;height:2px;background:var(--olive);margin:5px 0}
+@media(max-width:860px){
+  .nav-links{position:fixed;inset:66px 0 auto 0;flex-direction:column;background:var(--bg);padding:1.2rem 22px 1.6rem;gap:1.1rem;border-bottom:1px solid var(--line);transform:translateY(-130%);transition:.28s;align-items:flex-start}
+  .nav-links.open{transform:translateY(0)}
+  .hamb{display:block}
+  .nav .btn-ghost{display:none}
+}
+
+/* ============ HERO ============ */
+.hero{position:relative;overflow:hidden;padding:clamp(48px,9vw,104px) 0 clamp(40px,7vw,80px)}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+.hero h1{font-size:clamp(2.5rem,6.4vw,4.45rem)}
+.hero h1 em{font-style:italic;color:var(--sage)}
+.hero p.lead{font-size:1.16rem;color:var(--ink-soft);margin:1.3rem 0 1.9rem;max-width:34ch}
+.hero-cta{display:flex;flex-wrap:wrap;gap:.8rem}
+.hero-badge{display:inline-flex;align-items:center;gap:.55rem;background:var(--bg-2);border:1px solid var(--line);border-radius:999px;padding:.4rem .9rem .4rem .5rem;font-size:.82rem;font-weight:600;color:var(--olive-2);margin-bottom:1.4rem}
+.hero-badge b{background:var(--olive);color:#fff;border-radius:999px;padding:.2rem .6rem;font-weight:600}
+.hero-photo{position:relative}
+.hero-photo .frame{aspect-ratio:4/5;border-radius:24px;overflow:hidden;background:linear-gradient(150deg,var(--sage-soft),var(--bg-2));box-shadow:var(--shadow);display:flex;align-items:center;justify-content:center}
+.hero-photo .frame img{width:100%;height:100%;object-fit:cover}
+.hero-photo .frame span{color:var(--olive-2);font-family:"Fraunces";font-style:italic;opacity:.5;font-size:1.1rem;text-align:center;padding:1rem}
+.hero-seal{position:absolute;bottom:-26px;left:-26px;width:120px;height:120px;background:var(--white);border-radius:50%;box-shadow:var(--shadow);display:flex;align-items:center;justify-content:center}
+.hero-stats{display:flex;gap:2.2rem;margin-top:2.4rem;flex-wrap:wrap}
+.hero-stats .n{font-family:"Fraunces";font-size:2.1rem;color:var(--olive);line-height:1}
+.hero-stats .l{font-size:.82rem;color:var(--ink-soft);max-width:16ch;margin-top:.3rem}
+@media(max-width:860px){.hero-grid{grid-template-columns:1fr;gap:34px}.hero-photo{order:-1;max-width:320px}}
+
+/* leafy backdrop */
+.leaf-bg{position:absolute;inset:0;pointer-events:none;opacity:.06;z-index:0}
+.hero .wrap{position:relative;z-index:1}
+
+/* ============ SECTIONS ============ */
+section{padding:clamp(56px,8vw,96px) 0}
+.section-head{max-width:60ch;margin-bottom:2.6rem}
+.section-head h2{font-size:clamp(1.9rem,4vw,2.9rem);margin-top:.7rem}
+.alt{background:var(--bg-2)}
+
+/* sobre mí */
+.about{display:grid;grid-template-columns:.9fr 1.1fr;gap:46px;align-items:center}
+.about-photos{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.about-photos .ph{aspect-ratio:3/4;border-radius:16px;overflow:hidden;background:linear-gradient(160deg,var(--sage-soft),var(--bg));display:flex;align-items:center;justify-content:center}
+.about-photos .ph img{width:100%;height:100%;object-fit:cover}
+.about-photos .ph:nth-child(2){margin-top:30px}
+.about p{color:var(--ink-soft);margin:1rem 0}
+@media(max-width:860px){.about{grid-template-columns:1fr}}
+
+/* servicios */
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:26px;display:flex;flex-direction:column;gap:.5rem;transition:.2s}
+.card:hover{transform:translateY(-4px);box-shadow:var(--shadow);border-color:var(--sage-soft)}
+.card .ic{width:46px;height:46px;border-radius:12px;background:var(--bg-2);display:flex;align-items:center;justify-content:center;margin-bottom:.4rem;color:var(--olive)}
+.card h3{font-size:1.32rem}
+.card ul{margin:.4rem 0 0;padding-left:1.1rem;color:var(--ink-soft);font-size:.95rem}
+.card ul li{margin:.25rem 0}
+@media(max-width:860px){.cards{grid-template-columns:1fr}}
+
+/* por qué */
+.why{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.why .it{padding:22px;border-left:2px solid var(--sage-soft)}
+.why .it h3{font-size:1.12rem;margin-bottom:.4rem}
+.why .it p{font-size:.92rem;color:var(--ink-soft);margin:0}
+@media(max-width:860px){.why{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.why{grid-template-columns:1fr}}
+
+/* proceso */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;counter-reset:s}
+.step{position:relative;background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:30px 24px}
+.step .num{font-family:"Fraunces";font-size:1.5rem;color:var(--sage);display:flex;align-items:center;gap:.5rem;margin-bottom:.6rem}
+.step .num::before{counter-increment:s;content:"0" counter(s)}
+.step h3{font-size:1.18rem;margin-bottom:.4rem}
+.step p{font-size:.94rem;color:var(--ink-soft);margin:0}
+@media(max-width:860px){.steps{grid-template-columns:1fr}}
+
+/* redes */
+.social{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.social-links{display:flex;flex-direction:column;gap:.8rem}
+.slink{display:flex;align-items:center;gap:.9rem;background:var(--white);border:1px solid var(--line);border-radius:14px;padding:.85rem 1.1rem;text-decoration:none;font-weight:600;color:var(--ink);transition:.18s}
+.slink:hover{border-color:var(--sage);transform:translateX(4px)}
+.slink .ic{width:40px;height:40px;border-radius:10px;display:flex;align-items:center;justify-content:center;color:#fff;flex-shrink:0}
+.slink small{display:block;font-weight:500;color:var(--ink-soft);font-size:.82rem}
+.ig{background:linear-gradient(45deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888)}
+.fb{background:#1877f2}.wa{background:#1faf54}
+@media(max-width:860px){.social{grid-template-columns:1fr}}
+
+/* testimonios */
+.tcarousel{position:relative;background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:38px 32px;text-align:center;min-height:200px;display:flex;flex-direction:column;justify-content:center;align-items:center}
+.tcarousel .stars{color:var(--clay);letter-spacing:.18em;margin-bottom:1rem}
+.tcarousel blockquote{font-family:"Fraunces";font-style:italic;font-size:1.32rem;line-height:1.4;margin:0 0 1rem;max-width:48ch}
+.tcarousel cite{font-style:normal;font-weight:600;color:var(--olive)}
+.tdots{display:flex;gap:.5rem;justify-content:center;margin-top:1.4rem}
+.tdots button{width:9px;height:9px;border-radius:50%;border:0;background:var(--line);cursor:pointer;padding:0}
+.tdots button.on{background:var(--sage)}
+
+/* CTA contacto */
+.contact{background:var(--olive);color:var(--white)}
+.contact h2{color:var(--white)}
+.contact .eyebrow{color:var(--sage-soft)}.contact .eyebrow::before{background:var(--sage-soft)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:46px;align-items:start}
+.contact p{color:#D9E0CC}
+.cform{display:grid;gap:.8rem}
+.cform input,.cform textarea{width:100%;font-family:inherit;font-size:1rem;padding:.85rem 1rem;border-radius:12px;border:1px solid var(--olive-2);background:rgba(255,255,255,.07);color:#fff}
+.cform input::placeholder,.cform textarea::placeholder{color:#aebba0}
+.cform textarea{min-height:96px;resize:vertical}
+@media(max-width:860px){.contact-grid{grid-template-columns:1fr}}
+
+/* footer */
+footer{background:#1c2418;color:#c4ccba;padding:46px 0 30px;font-size:.92rem}
+.foot-grid{display:flex;justify-content:space-between;gap:30px;flex-wrap:wrap;align-items:center}
+footer a{color:#c4ccba}
+.foot-legal{margin-top:26px;padding-top:18px;border-top:1px solid #313a2a;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:.82rem;color:#8d977f}
+.linklike{background:none;border:0;color:#c4ccba;cursor:pointer;font:inherit;text-decoration:underline;padding:0}
+
+/* ============ MODAL / DIALOG ============ */
+.overlay{position:fixed;inset:0;background:rgba(28,36,24,.55);backdrop-filter:blur(3px);z-index:100;display:none;align-items:flex-start;justify-content:center;padding:26px 14px;overflow:auto}
+.overlay.show{display:flex}
+.dialog{background:var(--bg);width:100%;max-width:560px;border-radius:22px;box-shadow:var(--shadow);overflow:hidden;animation:pop .25s}
+.dialog.wide{max-width:780px}
+@keyframes pop{from{transform:translateY(14px);opacity:0}to{transform:none;opacity:1}}
+.d-head{padding:20px 24px;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;align-items:center;background:var(--white)}
+.d-head h3{font-size:1.3rem}
+.d-close{background:none;border:0;font-size:1.5rem;cursor:pointer;color:var(--ink-soft);line-height:1}
+.d-body{padding:24px}
+.field{margin-bottom:1rem}
+.field label{display:block;font-weight:600;font-size:.9rem;margin-bottom:.35rem}
+.field input,.field select,.field textarea{width:100%;font-family:inherit;font-size:1rem;padding:.7rem .85rem;border:1px solid var(--line);border-radius:11px;background:var(--white);color:var(--ink)}
+.field textarea{min-height:80px;resize:vertical}
+.field .hint{font-size:.8rem;color:var(--ink-soft);margin-top:.3rem}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:.9rem}
+@media(max-width:520px){.two{grid-template-columns:1fr}}
+
+/* steps progress */
+.prog{display:flex;gap:.4rem;margin-bottom:1.4rem}
+.prog .p{flex:1;height:5px;border-radius:999px;background:var(--line)}
+.prog .p.on{background:var(--sage)}
+
+/* modalidad choice */
+.modes{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.mode{border:2px solid var(--line);border-radius:16px;padding:20px;cursor:pointer;text-align:center;transition:.16s;background:var(--white)}
+.mode:hover{border-color:var(--sage)}
+.mode.sel{border-color:var(--olive);background:var(--bg-2)}
+.mode .ic{font-size:1.7rem}
+.mode b{display:block;margin:.4rem 0 .2rem}
+.mode small{color:var(--ink-soft)}
+@media(max-width:520px){.modes{grid-template-columns:1fr}}
+
+/* slot picker */
+.daysrow{display:flex;gap:.5rem;overflow-x:auto;padding-bottom:.4rem;margin-bottom:1rem}
+.day{flex:0 0 auto;min-width:64px;text-align:center;border:1.5px solid var(--line);border-radius:13px;padding:.6rem .4rem;cursor:pointer;background:var(--white)}
+.day.sel{border-color:var(--olive);background:var(--bg-2)}
+.day .dn{font-size:.72rem;color:var(--ink-soft);text-transform:uppercase}
+.day .dd{font-family:"Fraunces";font-size:1.25rem}
+.slots{display:grid;grid-template-columns:repeat(auto-fill,minmax(80px,1fr));gap:.5rem}
+.slot{border:1.5px solid var(--line);border-radius:10px;padding:.55rem;text-align:center;cursor:pointer;background:var(--white);font-weight:600;font-size:.92rem}
+.slot.sel{border-color:var(--olive);background:var(--olive);color:#fff}
+.slot:disabled{opacity:.35;cursor:not-allowed;text-decoration:line-through}
+
+/* bank box */
+.bankbox{background:var(--bg-2);border:1px dashed var(--sage);border-radius:14px;padding:18px;margin:1rem 0}
+.bankrow{display:flex;justify-content:space-between;gap:1rem;padding:.4rem 0;border-bottom:1px dashed var(--line);font-size:.95rem}
+.bankrow:last-child{border:0}
+.bankrow b{font-family:"Hanken Grotesk"}
+.copybtn{background:none;border:1px solid var(--line);border-radius:8px;cursor:pointer;font-size:.78rem;padding:.2rem .5rem}
+
+/* note / success */
+.note{background:var(--bg-2);border-left:3px solid var(--sage);border-radius:8px;padding:.8rem 1rem;font-size:.9rem;color:var(--ink-soft);margin:1rem 0}
+.success{text-align:center;padding:1rem}
+.success .big{width:74px;height:74px;border-radius:50%;background:var(--sage);color:#fff;display:flex;align-items:center;justify-content:center;font-size:2rem;margin:0 auto 1rem}
+.folio{font-family:"Fraunces";font-size:1.6rem;color:var(--olive);letter-spacing:.05em}
+
+/* history form sections */
+.hsec{border:1px solid var(--line);border-radius:14px;margin-bottom:1rem;overflow:hidden;background:var(--white)}
+.hsec>summary{cursor:pointer;padding:.95rem 1.1rem;font-weight:600;font-family:"Fraunces";font-size:1.08rem;list-style:none;display:flex;justify-content:space-between;align-items:center;background:var(--bg-2)}
+.hsec>summary::-webkit-details-marker{display:none}
+.hsec>summary::after{content:"＋";color:var(--sage)}
+.hsec[open]>summary::after{content:"－"}
+.hsec .inner{padding:1.1rem}
+.radio-row{display:flex;gap:1.2rem;flex-wrap:wrap;margin-top:.3rem}
+.radio-row label{font-weight:500;display:flex;align-items:center;gap:.35rem}
+
+/* admin */
+.admin-tabs{display:flex;gap:.4rem;flex-wrap:wrap;margin-bottom:1.2rem}
+.admin-tabs button{border:1px solid var(--line);background:var(--white);border-radius:999px;padding:.5rem 1rem;cursor:pointer;font-weight:600;font-size:.9rem}
+.admin-tabs button.on{background:var(--olive);color:#fff;border-color:var(--olive)}
+.cita{border:1px solid var(--line);border-radius:13px;padding:14px 16px;margin-bottom:.8rem;background:var(--white)}
+.cita .top{display:flex;justify-content:space-between;gap:1rem;align-items:flex-start}
+.tag{font-size:.72rem;font-weight:700;padding:.18rem .6rem;border-radius:999px;text-transform:uppercase;letter-spacing:.04em}
+.tag.pend{background:#fbeccd;color:#9a6b16}
+.tag.conf{background:#d8ecd6;color:#2c6b2a}
+.tag.canc{background:#ecd6d6;color:#8a2c2c}
+.cita .acts{display:flex;gap:.5rem;flex-wrap:wrap;margin-top:.7rem}
+.mini{font-size:.82rem;padding:.4rem .8rem;border-radius:8px;border:1px solid var(--line);background:var(--white);cursor:pointer;font-weight:600}
+.mini.go{background:var(--sage);color:#fff;border-color:var(--sage)}
+.mini.warn{background:#fff;color:#9a2c2c;border-color:#e0bcbc}
+
+.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:var(--olive);color:#fff;padding:.8rem 1.3rem;border-radius:12px;z-index:300;box-shadow:var(--shadow);opacity:0;transition:.25s;pointer-events:none}
+.toast.show{opacity:1}
+.hidden{display:none!important}
+.center{text-align:center}
+.fabwa{position:fixed;right:18px;bottom:18px;z-index:60;width:56px;height:56px;border-radius:50%;background:#1faf54;color:#fff;display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow);text-decoration:none}
+@media print{.nav,.fabwa,.overlay{display:none!important}}
+</style>
+</head>
+<body>
+
+<!-- ===================== NAV ===================== -->
+<header class="nav">
+  <div class="wrap nav-in">
+    <a href="#top" class="brand">
+      <span class="seal" aria-hidden="true">
+        <svg width="34" height="34" viewBox="0 0 100 100"><circle cx="50" cy="50" r="47" fill="none" stroke="#2F3D2C" stroke-width="2"/><path d="M50 70 C40 60 38 44 50 30 C62 44 60 60 50 70 Z" fill="#8A9A63"/><path d="M50 64 L50 32" stroke="#2F3D2C" stroke-width="1.5"/></svg>
+      </span>
+      <span>Linda Álvarez<small>Nutrición Integral</small></span>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#sobre" onclick="closeNav()">Sobre mí</a>
+      <a href="#servicios" onclick="closeNav()">Servicios</a>
+      <a href="#proceso" onclick="closeNav()">Cómo funciona</a>
+      <a href="#redes" onclick="closeNav()">Redes</a>
+      <a href="#contacto" onclick="closeNav()">Contacto</a>
+      <a href="#" onclick="event.preventDefault();openAdmin();closeNav()" class="muted" style="font-size:.85rem">Acceso nutrióloga</a>
+    </nav>
+    <div class="nav-cta">
+      <button class="btn btn-ghost" onclick="openBooking()">Agendar</button>
+      <button class="hamb" aria-label="Menú" onclick="toggleNav()"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<a class="fabwa" id="fabwa" href="#" aria-label="WhatsApp" target="_blank" rel="noopener">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.578-.939zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+</a>
+
+<!-- ===================== HERO ===================== -->
+<main id="top">
+<section class="hero" id="inicio">
+  <div class="leaf-bg" aria-hidden="true">
+    <svg width="100%" height="100%" preserveAspectRatio="xMidYMid slice" viewBox="0 0 400 400"><g fill="#2F3D2C"><path d="M340 40 C310 70 300 120 340 160 C380 120 370 70 340 40Z"/><path d="M60 300 C30 330 20 380 60 420 C100 380 90 330 60 300Z"/></g></svg>
+  </div>
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <span class="hero-badge"><b>Céd. 6940933</b> Nutrióloga clínica certificada</span>
+        <h1>Nutre tu cuerpo,<br><em>sin pelearte</em> con la comida.</h1>
+        <p class="lead">Consulta de nutrición clínica y deportiva, en línea y presencial. Planes personalizados, basados en evidencia y sin dietas restrictivas.</p>
+        <div class="hero-cta">
+          <button class="btn btn-primary" onclick="openBooking()">Agendar consulta</button>
+          <a class="btn btn-wa" id="heroWa" target="_blank" rel="noopener">Escribir por WhatsApp</a>
+        </div>
+        <div class="hero-stats">
+          <div><div class="n" data-count="500">500</div><div class="l">Pacientes acompañados</div></div>
+          <div><div class="n" data-count="9" data-suffix="+">9+</div><div class="l">Años de experiencia</div></div>
+          <div><div class="n" data-count="100" data-suffix="%">100%</div><div class="l">Planes personalizados</div></div>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <div class="frame"><img src="hero.jpg" alt="Lic. Nut. Linda Álvarez" loading="eager"></div>
+        <div class="hero-seal">
+          <svg width="92" height="92" viewBox="0 0 100 100"><circle cx="50" cy="50" r="46" fill="none" stroke="#2F3D2C" stroke-width="1.5"/><circle cx="50" cy="50" r="40" fill="none" stroke="#8A9A63" stroke-width=".8"/><path d="M50 72 C39 61 37 43 50 27 C63 43 61 61 50 72Z" fill="#8A9A63" opacity=".25"/><path d="M50 70 L50 30" stroke="#2F3D2C" stroke-width="1.2"/><text x="50" y="92" text-anchor="middle" font-family="Hanken Grotesk" font-size="6.5" fill="#2F3D2C" letter-spacing="1">CÉDULA 6940933</text></svg>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SOBRE MÍ ===================== -->
+<section id="sobre">
+  <div class="wrap about">
+    <div class="about-photos">
+      <div class="ph"><img src="about1.jpg" alt="Linda Álvarez, nutrióloga"></div>
+      <div class="ph"><img src="about2.jpg" alt="Linda Álvarez en consulta"></div>
+    </div>
+    <div>
+      <span class="eyebrow">Sobre mí</span>
+      <h2 style="margin-top:.7rem">Nutrición personalizada para resultados reales y sostenibles.</h2>
+      <p>Soy la <b>Lic. Nut. Linda Álvarez</b>, nutrióloga clínica y deportiva. Acompaño a personas que quieren sentirse bien con su cuerpo sin reglas extremas ni culpa alrededor de la comida.</p>
+      <p>Mi enfoque une la evidencia científica con un acompañamiento cercano, para construir hábitos que sí puedes mantener — no dietas temporales. Cada plan se adapta a tu estilo de vida, tus horarios, tus gustos y tu historia clínica.</p>
+      <button class="btn btn-primary" onclick="openBooking()">Agendar una cita</button>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SERVICIOS ===================== -->
+<section id="servicios" class="alt">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">Servicios</span>
+      <h2>Programas diseñados para tu objetivo de salud</h2>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-4.5-7-10a4 4 0 017-2.6A4 4 0 0119 11c0 5.5-7 10-7 10z"/></svg></div>
+        <h3>Nutrición clínica</h3>
+        <p class="muted" style="margin:.2rem 0">Abordaje basado en evidencia para condiciones que requieren cuidado especial.</p>
+        <ul>
+          <li>SOP y resistencia a la insulina</li>
+          <li>Diabetes, hipertensión e hígado graso</li>
+          <li>Dislipidemias y control de peso</li>
+          <li>Seguimiento cercano y educación nutricional</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 12h12M4 9v6M20 9v6M9 7v10M15 7v10"/></svg></div>
+        <h3>Nutrición deportiva</h3>
+        <p class="muted" style="margin:.2rem 0">Para mejorar tu rendimiento y composición corporal con un plan a tu medida.</p>
+        <ul>
+          <li>Composición corporal y antropometría</li>
+          <li>Estrategia para entrenamiento y competencia</li>
+          <li>Energía y recuperación</li>
+          <li>Suplementación responsable</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="ic"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M8 13c1.5 2 6.5 2 8 0"/></svg></div>
+        <h3>Nutrición sin dieta</h3>
+        <p class="muted" style="margin:.2rem 0">Mejora tu relación con la comida y tus hábitos, sin alimentos prohibidos.</p>
+        <ul>
+          <li>Hábitos sostenibles, no dietas temporales</li>
+          <li>Hambre emocional y saciedad</li>
+          <li>Educación nutricional</li>
+          <li>Acompañamiento sin culpa</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== POR QUÉ ===================== -->
+<section id="porque">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">¿Por qué elegirme?</span>
+      <h2>Acompañamiento pensado para tu bienestar a largo plazo</h2>
+    </div>
+    <div class="why">
+      <div class="it"><h3>Basado en evidencia</h3><p>Recomendaciones respaldadas por la ciencia y adaptadas a tu vida real. Nada de detox ni dietas mágicas.</p></div>
+      <div class="it"><h3>Cédula profesional</h3><p>Atención con respaldo profesional (Céd. 6940933) y experiencia clínica y deportiva.</p></div>
+      <div class="it"><h3>Sin restricciones extremas</h3><p>Planes que puedes mantener, sin vivir en ciclos de restricción, atracón y culpa.</p></div>
+      <div class="it"><h3>Acompañamiento continuo</h3><p>Seguimiento periódico para revisar avances y ajustar tu plan. Nunca te quedas sola/o.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PROCESO ===================== -->
+<section id="proceso" class="alt">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow">¿Cómo funciona?</span>
+      <h2>Pasos sencillos para empezar</h2>
+    </div>
+    <div class="steps">
+      <div class="step"><div class="num"></div><h3>Agenda y aparta tu lugar</h3><p>Elige modalidad y horario. Para confirmar tu cita realizas la transferencia de la consulta y nos avisas.</p></div>
+      <div class="step"><div class="num"></div><h3>Llena tu historia clínica</h3><p>Una vez confirmado tu pago, completas tu historia clínica nutricional en línea, con calma y desde tu casa.</p></div>
+      <div class="step"><div class="num"></div><h3>Recibe tu plan y seguimiento</h3><p>En tu consulta construimos un plan personalizado para tu día a día, con seguimiento para ajustar avances.</p></div>
+    </div>
+    <div class="center" style="margin-top:2rem">
+      <button class="btn btn-primary" onclick="openBooking()">Agendar mi primera consulta</button>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== REDES ===================== -->
+<section id="redes">
+  <div class="wrap social">
+    <div>
+      <span class="eyebrow">Sígueme</span>
+      <h2 style="margin:.7rem 0 1rem">Tips de nutrición todos los días</h2>
+      <p class="muted">Recetas, mitos de la alimentación y motivación real para tu proceso. Acompáñame en redes y escríbeme cuando quieras.</p>
+    </div>
+    <div class="social-links">
+      <a class="slink" id="lnkIg" target="_blank" rel="noopener">
+        <span class="ic ig"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.2c3.2 0 3.6 0 4.9.07 1.2.06 1.8.25 2.2.42.6.2 1 .47 1.4.9.4.4.7.8.9 1.4.17.4.36 1 .42 2.2.06 1.3.07 1.7.07 4.9s0 3.6-.07 4.9c-.06 1.2-.25 1.8-.42 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.17-1 .36-2.2.42-1.3.06-1.7.07-4.9.07s-3.6 0-4.9-.07c-1.2-.06-1.8-.25-2.2-.42-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.17-.4-.36-1-.42-2.2C2.2 15.6 2.2 15.2 2.2 12s0-3.6.07-4.9c.06-1.2.25-1.8.42-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.17 1-.36 2.2-.42C8.4 2.2 8.8 2.2 12 2.2zm0 3.2A6.6 6.6 0 1018.6 12 6.6 6.6 0 0012 5.4zm0 10.9A4.3 4.3 0 1116.3 12 4.3 4.3 0 0112 16.3zm6.8-11.2a1.54 1.54 0 11-1.54-1.54 1.54 1.54 0 011.54 1.54z"/></svg></span>
+        <span>Instagram<small>@nutriologalindaalvarez</small></span>
+      </a>
+      <a class="slink" id="lnkFb" target="_blank" rel="noopener">
+        <span class="ic fb"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07c0 6 4.39 10.97 10.13 11.87v-8.4H7.08v-3.47h3.05V9.4c0-3.02 1.8-4.7 4.54-4.7 1.31 0 2.68.24 2.68.24v2.97h-1.5c-1.49 0-1.96.93-1.96 1.89v2.26h3.33l-.53 3.47h-2.8v8.4C19.61 23.04 24 18.07 24 12.07z"/></svg></span>
+        <span>Facebook<small>Nutrióloga Linda Álvarez</small></span>
+      </a>
+      <a class="slink" id="lnkWa" target="_blank" rel="noopener">
+        <span class="ic wa"><svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24z"/></svg></span>
+        <span>WhatsApp<small>+52 871 549 3807</small></span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== TESTIMONIOS ===================== -->
+<section id="testimonios" class="alt">
+  <div class="wrap">
+    <div class="section-head center" style="margin-left:auto;margin-right:auto">
+      <span class="eyebrow" style="justify-content:center">Testimonios</span>
+      <h2>Lo que dicen mis pacientes</h2>
+    </div>
+    <div class="tcarousel" id="tcar">
+      <div class="stars">★★★★★</div>
+      <blockquote id="tquote">Aquí aparecerán los testimonios de tus pacientes. Linda puede agregarlos desde su panel.</blockquote>
+      <cite id="tcite">— Nutrición Integral</cite>
+      <div class="tdots" id="tdots"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CONTACTO ===================== -->
+<section id="contacto" class="contact">
+  <div class="wrap contact-grid">
+    <div>
+      <span class="eyebrow">Contacto</span>
+      <h2 style="margin:.7rem 0 1rem">Comienza hoy tu camino hacia una relación sana con la comida</h2>
+      <p>Escríbeme para resolver cualquier duda sobre el proceso, precios o modalidades. Consulta en línea por videollamada o WhatsApp, y presencial con cita previa.</p>
+      <p style="margin-top:1.4rem"><b style="color:#fff">WhatsApp:</b> +52 871 549 3807</p>
+      <a class="btn btn-wa" id="ctaWa" target="_blank" rel="noopener" style="margin-top:.6rem">Agendar por WhatsApp</a>
+    </div>
+    <div>
+      <div class="cform">
+        <input id="cf_nombre" placeholder="Nombre" />
+        <input id="cf_tel" placeholder="Celular" />
+        <input id="cf_email" placeholder="Correo electrónico" type="email" />
+        <textarea id="cf_msg" placeholder="¿En qué te puedo ayudar?"></textarea>
+        <button class="btn btn-primary btn-block" onclick="enviarProspecto()">Enviar mensaje</button>
+        <p class="center" style="font-size:.78rem;color:#aebba0;margin:.2rem 0 0">Al enviar aceptas el aviso de privacidad.</p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="brand" style="color:#fff">Lic. Nut. Linda Álvarez</div>
+        <div style="font-size:.85rem;color:#8d977f;margin-top:.3rem">Nutrición Clínica y Deportiva · Céd. Prof. 6940933</div>
+      </div>
+      <div style="display:flex;gap:1rem">
+        <a id="footIg" target="_blank" rel="noopener">Instagram</a>
+        <a id="footFb" target="_blank" rel="noopener">Facebook</a>
+        <a id="footWa" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
+    </div>
+    <div class="foot-legal">
+      <span>© <span id="yr"></span> Lic. Nut. Linda Álvarez · Todos los derechos reservados.</span>
+      <span><button class="linklike" onclick="openPriv()">Aviso de privacidad</button></span>
+    </div>
+  </div>
+</footer>
+
+<!-- ===================== BOOKING OVERLAY ===================== -->
+<div class="overlay" id="ovBooking">
+  <div class="dialog">
+    <div class="d-head"><h3 id="bkTitle">Agendar consulta</h3><button class="d-close" onclick="closeOverlay('ovBooking')">×</button></div>
+    <div class="d-body">
+      <div class="prog"><div class="p" id="pr1"></div><div class="p" id="pr2"></div><div class="p" id="pr3"></div><div class="p" id="pr4"></div></div>
+
+      <!-- STEP 1 modalidad -->
+      <div id="bk1">
+        <p class="muted" style="margin-top:0">¿Cómo prefieres tu consulta?</p>
+        <div class="modes">
+          <div class="mode" data-mod="En línea" onclick="pickMode(this)">
+            <div class="ic">💻</div><b>En línea</b><small>Videollamada o WhatsApp</small>
+          </div>
+          <div class="mode" data-mod="Presencial" onclick="pickMode(this)">
+            <div class="ic">🏥</div><b>Presencial</b><small>Con cita previa</small>
+          </div>
+        </div>
+        <button class="btn btn-primary btn-block" style="margin-top:1.4rem" id="bk1next" disabled onclick="goStep(2)">Continuar</button>
+      </div>
+
+      <!-- STEP 2 horario -->
+      <div id="bk2" class="hidden">
+        <p class="muted" style="margin-top:0">Elige el día y la hora que prefieras.</p>
+        <div class="daysrow" id="daysrow"></div>
+        <div class="slots" id="slots"></div>
+        <button class="btn btn-primary btn-block" style="margin-top:1.4rem" id="bk2next" disabled onclick="goStep(3)">Continuar</button>
+        <button class="btn btn-ghost btn-block" style="margin-top:.6rem" onclick="goStep(1)">Atrás</button>
+      </div>
+
+      <!-- STEP 3 datos -->
+      <div id="bk3" class="hidden">
+        <p class="muted" style="margin-top:0">Datos para tu cita (rápido — la historia clínica completa la llenas después de confirmar).</p>
+        <div class="two">
+          <div class="field"><label>Nombre completo *</label><input id="bk_nombre"></div>
+          <div class="field"><label>Edad *</label><input id="bk_edad" type="number" min="0" max="120"></div>
+        </div>
+        <div class="two">
+          <div class="field"><label>Sexo *</label><select id="bk_sexo"><option value="">Selecciona</option><option>Femenino</option><option>Masculino</option><option>Prefiero no decir</option></select></div>
+          <div class="field"><label>Celular (WhatsApp) *</label><input id="bk_tel"></div>
+        </div>
+        <div class="field"><label>Correo electrónico *</label><input id="bk_email" type="email"></div>
+        <div class="field"><label>Motivo de la consulta *</label><textarea id="bk_motivo" placeholder="¿Qué te gustaría lograr?"></textarea></div>
+        <button class="btn btn-primary btn-block" onclick="goStep(4)">Ir al pago</button>
+        <button class="btn btn-ghost btn-block" style="margin-top:.6rem" onclick="goStep(2)">Atrás</button>
+      </div>
+
+      <!-- STEP 4 pago -->
+      <div id="bk4" class="hidden">
+        <p class="muted" style="margin-top:0">Para <b>apartar tu lugar</b>, realiza la transferencia de la consulta y avísanos. Linda confirma tu cita al validar el pago.</p>
+        <div class="bankbox" id="bankbox"></div>
+        <div class="note">Tu horario queda apartado como <b>pendiente</b>. Si no se confirma el pago, el lugar se libera.</div>
+        <a class="btn btn-wa btn-block" id="bkWaPay" target="_blank" rel="noopener" onclick="confirmBooking()">Ya transferí · enviar comprobante por WhatsApp</a>
+        <button class="btn btn-ghost btn-block" style="margin-top:.6rem" onclick="goStep(3)">Atrás</button>
+      </div>
+
+      <!-- SUCCESS -->
+      <div id="bkDone" class="hidden success">
+        <div class="big">✓</div>
+        <h3 style="margin-bottom:.4rem">¡Lugar apartado!</h3>
+        <p class="muted">Tu folio de cita es</p>
+        <p class="folio" id="doneFolio">—</p>
+        <p class="muted" style="margin-top:1rem">En cuanto Linda valide tu transferencia recibirás la confirmación. Mientras, puedes adelantar tu historia clínica:</p>
+        <button class="btn btn-primary btn-block" style="margin-top:1rem" onclick="openHistoria(currentFolio)">Llenar mi historia clínica</button>
+        <button class="btn btn-ghost btn-block" style="margin-top:.6rem" onclick="closeOverlay('ovBooking')">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== HISTORIA CLÍNICA OVERLAY ===================== -->
+<div class="overlay" id="ovHist">
+  <div class="dialog wide">
+    <div class="d-head"><h3>Historia clínica nutricional</h3><button class="d-close" onclick="closeOverlay('ovHist')">×</button></div>
+    <div class="d-body" id="histBody">
+      <div class="note">Completa lo que aplique a tu caso. Toda la información es confidencial y sólo la verá tu nutrióloga. Folio: <b id="histFolio">—</b></div>
+      <div id="histForm"></div>
+      <button class="btn btn-primary btn-block" style="margin-top:1rem" onclick="guardarHistoria()">Guardar historia clínica</button>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== ADMIN OVERLAY ===================== -->
+<div class="overlay" id="ovAdmin">
+  <div class="dialog wide">
+    <div class="d-head"><h3>Panel · Linda Álvarez</h3><button class="d-close" onclick="closeOverlay('ovAdmin')">×</button></div>
+    <div class="d-body" id="adminBody">
+      <div id="adminLogin" class="center">
+        <p class="muted">Acceso exclusivo para la nutrióloga.</p>
+        <button class="btn btn-primary" onclick="adminLogin()">Entrar con Google</button>
+        <p class="hint" style="margin-top:1rem">Debes iniciar sesión con el correo configurado como administrador.</p>
+      </div>
+      <div id="adminPanel" class="hidden">
+        <div class="admin-tabs">
+          <button class="on" data-tab="citas" onclick="adminTab('citas')">Citas</button>
+          <button data-tab="prospectos" onclick="adminTab('prospectos')">Mensajes</button>
+          <button data-tab="testimonios" onclick="adminTab('testimonios')">Testimonios</button>
+          <button data-tab="config" onclick="adminTab('config')">Configuración</button>
+        </div>
+        <div id="tab-citas"></div>
+        <div id="tab-prospectos" class="hidden"></div>
+        <div id="tab-testimonios" class="hidden"></div>
+        <div id="tab-config" class="hidden"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ===================== AVISO PRIVACIDAD ===================== -->
+<div class="overlay" id="ovPriv">
+  <div class="dialog">
+    <div class="d-head"><h3>Aviso de privacidad</h3><button class="d-close" onclick="closeOverlay('ovPriv')">×</button></div>
+    <div class="d-body" style="font-size:.92rem;color:var(--ink-soft)">
+      <p><b>Responsable.</b> Lic. Nut. Linda Álvarez (Céd. Prof. 6940933) es responsable del tratamiento de tus datos personales.</p>
+      <p><b>Datos que recabamos.</b> Datos de identificación y contacto, y <b>datos personales sensibles de salud</b> (antecedentes, padecimientos, medición corporal, hábitos) necesarios para brindarte atención nutricional.</p>
+      <p><b>Finalidad.</b> Agendar y brindar tu consulta, elaborar tu plan nutricional y darte seguimiento. No compartimos tus datos con terceros sin tu consentimiento, salvo obligación legal.</p>
+      <p><b>Consentimiento.</b> Al proporcionar tu historia clínica otorgas tu consentimiento expreso para el tratamiento de tus datos sensibles con fines de atención en salud.</p>
+      <p><b>Derechos ARCO.</b> Puedes Acceder, Rectificar, Cancelar u Oponerte al uso de tus datos escribiendo al WhatsApp +52 871 549 3807.</p>
+      <p>Este aviso es un modelo base; ajústalo con tu asesoría legal conforme a la LFPDPPP.</p>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<!-- ===================== FIREBASE ===================== -->
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-auth-compat.js"></script>
+
+<script>
+/* =====================================================================
+   ⚙️  CONFIGURACIÓN — EDITA ESTE BLOQUE
+   ===================================================================== */
+
+// 1) Pega aquí las credenciales de TU NUEVO proyecto de Firebase
+//    (Consola Firebase → Configuración del proyecto → SDK web)
+const firebaseConfig = {
+  apiKey: "PEGA_TU_API_KEY",
+  authDomain: "PEGA_TU_AUTH_DOMAIN",
+  databaseURL: "PEGA_TU_DATABASE_URL",
+  projectId: "PEGA_TU_PROJECT_ID",
+  storageBucket: "PEGA_TU_STORAGE_BUCKET",
+  messagingSenderId: "PEGA_TU_SENDER_ID",
+  appId: "PEGA_TU_APP_ID"
+};
+
+// 2) Correo de Google con el que Linda entrará al panel de administración
+const ADMIN_EMAIL = "PEGA_EL_CORREO_DE_LINDA@gmail.com";
+
+// 3) Datos de contacto y redes
+const WHATSAPP = "5218715493807"; // sin signos, con 52 y 1
+const INSTAGRAM_URL = "https://www.instagram.com/nutriologalindaalvarez";
+const FACEBOOK_URL  = "https://www.facebook.com/share/18hKY99cTQ/";
+
+// 4) Valores por defecto (Linda los puede editar luego desde el panel → Configuración)
+const DEFAULT_CONFIG = {
+  precioConsulta: "$ —  (configurar)",
+  banco: "Banco (configurar)",
+  titular: "Linda Álvarez",
+  clabe: "CLABE (configurar)",
+  tarjeta: "",
+  // disponibilidad: días de la semana (0=Dom … 6=Sáb) y horarios
+  dias: [1,2,3,4,5],
+  horarios: ["09:00","10:00","11:00","12:00","16:00","17:00","18:00","19:00"]
+};
+
+/* =====================================================================
+   FIN DE CONFIGURACIÓN — abajo es lógica, normalmente no se edita
+   ===================================================================== */
+
+let db=null, auth=null, fbReady=false;
+try{
+  firebase.initializeApp(firebaseConfig);
+  db = firebase.database();
+  auth = firebase.auth();
+  fbReady = firebaseConfig.apiKey && firebaseConfig.apiKey.indexOf("PEGA_")===-1;
+}catch(e){ console.warn("Firebase no inicializado:", e); }
+
+let CONFIG = {...DEFAULT_CONFIG};
+
+/* ---------- helpers ---------- */
+const $=s=>document.querySelector(s);
+const $$=s=>document.querySelectorAll(s);
+function toast(m){const t=$('#toast');t.textContent=m;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),2600);}
+function waLink(text){return `https://wa.me/${WHATSAPP}?text=`+encodeURIComponent(text);}
+function openOverlay(id){$('#'+id).classList.add('show');document.body.style.overflow='hidden';}
+function closeOverlay(id){$('#'+id).classList.remove('show');document.body.style.overflow='';}
+function openPriv(){openOverlay('ovPriv');}
+function toggleNav(){$('#navLinks').classList.toggle('open');}
+function closeNav(){$('#navLinks').classList.remove('open');}
+function folioGen(){return 'LA-'+Date.now().toString(36).toUpperCase().slice(-6);}
+
+/* ---------- init links ---------- */
+$('#yr').textContent=new Date().getFullYear();
+const waGen=waLink("Hola Linda, me gustaría agendar una consulta de nutrición.");
+['heroWa','ctaWa','footWa','lnkWa','fabwa'].forEach(id=>{const el=document.getElementById(id);if(el)el.href=waGen;});
+['lnkIg','footIg'].forEach(id=>document.getElementById(id).href=INSTAGRAM_URL);
+['lnkFb','footFb'].forEach(id=>document.getElementById(id).href=FACEBOOK_URL);
+
+/* ---------- contador animado ---------- */
+function animateCounters(){
+  $$('[data-count]').forEach(el=>{
+    const target=+el.dataset.count, suf=el.dataset.suffix||'';let n=0;
+    const step=Math.max(1,Math.round(target/60));
+    const t=setInterval(()=>{n+=step;if(n>=target){n=target;clearInterval(t);}el.textContent=n+suf;},22);
+  });
+}
+const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){animateCounters();io.disconnect();}})});
+io.observe($('.hero-stats'));
+
+/* =====================================================================
+   CONFIG (carga desde Firebase si existe)
+   ===================================================================== */
+function loadConfig(){
+  if(!fbReady){renderBank();return;}
+  db.ref('config').on('value',s=>{
+    const v=s.val();if(v)CONFIG={...DEFAULT_CONFIG,...v};
+    renderBank();buildDays();
+  });
+}
+function renderBank(){
+  const b=$('#bankbox');
+  b.innerHTML=`
+    <div class="bankrow"><span>Monto de la consulta</span><b>${CONFIG.precioConsulta}</b></div>
+    <div class="bankrow"><span>Banco</span><b>${CONFIG.banco}</b></div>
+    <div class="bankrow"><span>Titular</span><b>${CONFIG.titular}</b></div>
+    <div class="bankrow"><span>CLABE</span><b>${CONFIG.clabe} <button class="copybtn" onclick="navigator.clipboard.writeText('${(CONFIG.clabe||'').replace(/\s/g,'')}');toast('CLABE copiada')">Copiar</button></b></div>
+    ${CONFIG.tarjeta?`<div class="bankrow"><span>Tarjeta</span><b>${CONFIG.tarjeta}</b></div>`:''}
+  `;
+}
+
+/* =====================================================================
+   BOOKING
+   ===================================================================== */
+let bk={modalidad:'',fecha:'',hora:''};
+let currentFolio='';
+
+function openBooking(){bk={modalidad:'',fecha:'',hora:''};goStep(1);
+  $$('#bk1 .mode').forEach(m=>m.classList.remove('sel'));$('#bk1next').disabled=true;
+  $('#bkDone').classList.add('hidden');openOverlay('ovBooking');buildDays();}
+function pickMode(el){$$('#bk1 .mode').forEach(m=>m.classList.remove('sel'));el.classList.add('sel');bk.modalidad=el.dataset.mod;$('#bk1next').disabled=false;}
+function goStep(n){
+  ['bk1','bk2','bk3','bk4','bkDone'].forEach(id=>$('#'+id).classList.add('hidden'));
+  $('#bk'+n).classList.remove('hidden');
+  [1,2,3,4].forEach(i=>$('#pr'+i).classList.toggle('on',i<=n));
+  $('#bkTitle').textContent = n===4?'Apartar con pago':'Agendar consulta';
+}
+function buildDays(){
+  const row=$('#daysrow');row.innerHTML='';
+  const dl=['Dom','Lun','Mar','Mié','Jue','Vie','Sáb'];
+  const today=new Date();let added=0,i=0;
+  while(added<14 && i<40){
+    const d=new Date(today);d.setDate(today.getDate()+i);i++;
+    if(!CONFIG.dias.includes(d.getDay()))continue;
+    const iso=d.toISOString().slice(0,10);
+    const el=document.createElement('div');el.className='day';el.dataset.iso=iso;
+    el.innerHTML=`<div class="dn">${dl[d.getDay()]}</div><div class="dd">${d.getDate()}</div><div class="dn">${d.toLocaleDateString('es-MX',{month:'short'})}</div>`;
+    el.onclick=()=>pickDay(el,iso);
+    row.appendChild(el);added++;
+  }
+  $('#slots').innerHTML='<p class="muted" style="grid-column:1/-1">Elige un día para ver horarios.</p>';
+  $('#bk2next').disabled=true;
+}
+function pickDay(el,iso){
+  $$('#daysrow .day').forEach(d=>d.classList.remove('sel'));el.classList.add('sel');
+  bk.fecha=iso;bk.hora='';$('#bk2next').disabled=true;renderSlots(iso);
+}
+function renderSlots(iso){
+  const cont=$('#slots');cont.innerHTML='';
+  const ocupadas=new Set();
+  const draw=()=>{
+    CONFIG.horarios.forEach(h=>{
+      const b=document.createElement('button');b.className='slot';b.textContent=h;
+      if(ocupadas.has(h)){b.disabled=true;}
+      b.onclick=()=>{$$('#slots .slot').forEach(s=>s.classList.remove('sel'));b.classList.add('sel');bk.hora=h;$('#bk2next').disabled=false;};
+      cont.appendChild(b);
+    });
+  };
+  if(fbReady){
+    db.ref('citas').orderByChild('fecha').equalTo(iso).once('value',s=>{
+      s.forEach(c=>{const v=c.val();if(v.estado!=='cancelada')ocupadas.add(v.hora);});
+      draw();
+    });
+  }else draw();
+}
+function confirmBooking(){
+  const nombre=$('#bk_nombre').value.trim();
+  if(!nombre||!$('#bk_edad').value||!$('#bk_sexo').value||!$('#bk_tel').value.trim()||!$('#bk_email').value.trim()||!$('#bk_motivo').value.trim()){
+    toast('Completa todos los datos antes de continuar.');event.preventDefault();goStep(3);return false;
+  }
+  currentFolio=folioGen();
+  const cita={
+    folio:currentFolio,modalidad:bk.modalidad,fecha:bk.fecha,hora:bk.hora,
+    nombre,edad:$('#bk_edad').value,sexo:$('#bk_sexo').value,
+    tel:$('#bk_tel').value.trim(),email:$('#bk_email').value.trim(),
+    motivo:$('#bk_motivo').value.trim(),estado:'pendiente',
+    createdAt:Date.now()
+  };
+  if(fbReady)db.ref('citas/'+currentFolio).set(cita);
+  // mensaje WhatsApp con comprobante
+  const msg=`Hola Linda, ya realicé la transferencia de mi consulta.%0A%0AFolio: ${currentFolio}%0ANombre: ${nombre}%0AModalidad: ${bk.modalidad}%0AFecha: ${bk.fecha} ${bk.hora}%0A%0AAdjunto mi comprobante de pago.`;
+  $('#bkWaPay').href=`https://wa.me/${WHATSAPP}?text=${msg}`;
+  $('#doneFolio').textContent=currentFolio;
+  goStep(4);setTimeout(()=>{['bk1','bk2','bk3','bk4'].forEach(id=>$('#'+id).classList.add('hidden'));$('#bkDone').classList.remove('hidden');},100);
+  return true;
+}
+
+/* =====================================================================
+   HISTORIA CLÍNICA (condicional)
+   ===================================================================== */
+function txt(label,id,ph=''){return `<div class="field"><label>${label}</label><input id="${id}" placeholder="${ph}"></div>`;}
+function area(label,id,ph=''){return `<div class="field"><label>${label}</label><textarea id="${id}" placeholder="${ph}"></textarea></div>`;}
+function yn(label,id){return `<div class="field"><label>${label}</label><div class="radio-row"><label><input type="radio" name="${id}" value="Sí"> Sí</label><label><input type="radio" name="${id}" value="No"> No</label></div></div>`;}
+
+function buildHistoria(cita){
+  const sexo=(cita&&cita.sexo)||'';const edad=cita?+cita.edad:30;
+  const esFem = sexo==='Femenino';
+  const esPed = edad>0 && edad<13;
+  const esMayor = edad>=65;
+  let h='';
+
+  h+=`<details class="hsec" open><summary>Datos personales</summary><div class="inner">
+    ${txt('Nombre completo','h_nombre',cita?cita.nombre:'')}
+    <div class="two">${txt('Edad','h_edad',cita?cita.edad:'')}${txt('Sexo','h_sexo',sexo)}</div>
+    <div class="two">${txt('Fecha de nacimiento','h_nac')}${txt('Estado civil','h_civil')}</div>
+    <div class="two">${txt('Escolaridad','h_escolaridad')}${txt('Ocupación','h_ocupacion')}</div>
+    ${txt('Teléfono y correo','h_contacto',cita?cita.tel+' · '+cita.email:'')}
+    ${area('Motivo de la consulta (qué deseas lograr)','h_motivo',cita?cita.motivo:'')}
+  </div></details>`;
+
+  h+=`<details class="hsec"><summary>Antecedentes</summary><div class="inner">
+    ${area('Antecedentes familiares (padres, abuelos, hermanos con alguna enfermedad)','h_af')}
+    ${area('Antecedentes de salud / enfermedad (incluye cirugías y tiempo con ella)','h_as')}
+    ${area('Medicamentos que tomas actualmente (dosis y tiempo)','h_meds')}
+  </div></details>`;
+
+  h+=`<details class="hsec"><summary>Estilo de vida</summary><div class="inner">
+    ${yn('¿Fumas?','h_tab')}${txt('Si fumas, ¿cuántos cigarrillos al día?','h_tab_n')}
+    ${yn('¿Consumes alcohol?','h_alc')}${txt('Tipo de bebida y cuánto a la semana','h_alc_n')}
+    ${txt('Bebidas estimulantes (café, té negro, refresco, energéticas)','h_estim')}
+    ${yn('¿Realizas actividad física?','h_af2')}${txt('Tipo, veces por semana y duración','h_af2_n')}${txt('¿Cuándo iniciaste?','h_af2_ini')}
+  </div></details>`;
+
+  h+=`<details class="hsec"><summary>Indicadores dietéticos (recordatorio 24 h)</summary><div class="inner">
+    ${area('Desayuno (qué consumes y horario)','h_desayuno')}
+    ${area('Comida (qué consumes y horario)','h_comida')}
+    ${area('Cena (qué consumes y horario)','h_cena')}
+    ${area('Entre comidas (qué consumes y horario)','h_entre')}
+    ${txt('¿Quién prepara tus alimentos?','h_prepara')}
+    ${txt('¿Comes en casa o fuera? ¿Con qué frecuencia?','h_fuera')}
+    ${txt('Horario de sueño (a qué hora te levantas, duermes y si tomas siestas)','h_sueno')}
+    ${yn('¿Has modificado tu alimentación en los últimos 6 meses?','h_mod')}${txt('Motivo','h_mod_n')}
+    ${txt('Apetito (bueno / malo / regular)','h_apetito')}
+    ${txt('¿En qué horario tienes más hambre?','h_hambre')}
+    ${txt('Alimentos preferidos','h_pref')}
+    ${yn('¿Alergia, intolerancia o aversión a algún alimento?','h_alergia')}${txt('¿Cuál y por qué?','h_alergia_n')}
+    ${yn('¿Tomas suplemento o complemento alimenticio?','h_supl')}${txt('¿Por qué y desde cuándo?','h_supl_n')}
+    ${txt('¿Tu consumo varía cuando estás triste, nervioso o ansioso?','h_emo')}
+    ${txt('Tipo de grasa o aceite para cocinar en casa','h_aceite')}
+    ${yn('¿Te has sometido antes a un régimen alimenticio?','h_regimen')}${area('Explica hace cuánto y con qué resultados','h_regimen_n')}
+    ${txt('¿Cuántos litros de agua bebes al día?','h_agua')}
+    ${area('Exámenes de laboratorio recientes (cuáles tienes; las imágenes envíalas por WhatsApp)','h_lab')}
+  </div></details>`;
+
+  h+=`<details class="hsec"><summary>Datos antropométricos</summary><div class="inner">
+    <div class="two">${txt('Peso actual (kg)','h_peso')}${txt('Peso habitual (kg)','h_peso_hab')}</div>
+    <div class="two">${txt('Peso máximo últimos 3 años','h_peso_max')}${txt('Peso mínimo últimos 3 años','h_peso_min')}</div>
+    ${txt('Talla actual (cm, sin zapatos)','h_talla')}
+    <div class="two">${txt('Cintura (cm)','h_cintura')}${txt('Muñeca (cm)','h_muneca')}</div>
+    <div class="two">${txt('Brazo (cm)','h_brazo')}${txt('Muslo (cm)','h_muslo')}</div>
+    ${txt('Pantorrilla (cm)','h_pantorrilla')}
+  </div></details>`;
+
+  if(esFem){
+    h+=`<details class="hsec"><summary>Aspectos ginecológicos</summary><div class="inner">
+      ${yn('¿Embarazo actual?','h_emb')}${txt('Semanas de gestación','h_emb_sem')}
+      <div class="two">${txt('Peso antes del embarazo','h_emb_peso1')}${txt('Peso actual','h_emb_peso2')}</div>
+      ${txt('Número de gestas','h_gesta')}${txt('Hijos y edades','h_hijos')}
+      ${txt('Anticonceptivos (nombre y dosis)','h_anti')}
+      ${yn('¿Climaterio o menopausia?','h_meno')}
+      ${yn('¿Terapia de reemplazo hormonal?','h_trh')}
+    </div></details>`;
+  }
+  if(esPed){
+    h+=`<details class="hsec"><summary>Datos pediátricos</summary><div class="inner">
+      ${txt('¿Nació por cesárea o parto normal?','h_parto')}
+      ${yn('¿Fue amamantado?','h_lact')}${txt('¿Por cuánto tiempo? / si no, ¿por qué?','h_lact_n')}
+      ${txt('Ablactación (edad en que empezó otros alimentos)','h_ablac')}
+      ${txt('¿Cómo era su peso entre los 3 y 9 años?','h_peso39')}
+      ${area('¿Cuándo comenzaron los problemas nutricionales y por qué?','h_probnut')}
+      <div class="two">${txt('Actividad durante el día','h_act_dia')}${txt('Horas de televisión/pantalla','h_tv')}</div>
+    </div></details>`;
+  }
+  if(esMayor){
+    h+=`<details class="hsec"><summary>Datos en adulto mayor</summary><div class="inner">
+      ${txt('Forma de desplazarse (camina / bastón / andadera / silla)','h_desp')}
+      ${yn('¿Vive solo/a?','h_solo')}${txt('Si no, ¿con quién?','h_solo_n')}
+      ${txt('¿Tiene dientes o usa dentadura?','h_dientes')}
+      ${txt('¿Tiene cuidadores o se vale por sí mismo/a?','h_cuid')}
+    </div></details>`;
+  }
+  return h;
+}
+function openHistoria(folio){
+  currentFolio=folio||currentFolio;
+  $('#histFolio').textContent=currentFolio||'—';
+  const render=(cita)=>{$('#histForm').innerHTML=buildHistoria(cita);closeOverlay('ovBooking');openOverlay('ovHist');};
+  if(fbReady && currentFolio){
+    db.ref('citas/'+currentFolio).once('value',s=>render(s.val()));
+  }else render(null);
+}
+function guardarHistoria(){
+  const data={};
+  $$('#histForm input, #histForm textarea').forEach(el=>{
+    if(el.type==='radio'){if(el.checked)data[el.name]=el.value;}
+    else if(el.id)data[el.id]=el.value;
+  });
+  data.savedAt=Date.now();data.folio=currentFolio;
+  if(fbReady && currentFolio){
+    db.ref('historias/'+currentFolio).set(data).then(()=>{toast('Historia clínica guardada. ¡Gracias!');closeOverlay('ovHist');});
+  }else{toast('Guardado (demo). Configura Firebase para almacenar.');closeOverlay('ovHist');}
+}
+
+/* =====================================================================
+   PROSPECTOS (form contacto)
+   ===================================================================== */
+function enviarProspecto(){
+  const p={nombre:$('#cf_nombre').value.trim(),tel:$('#cf_tel').value.trim(),email:$('#cf_email').value.trim(),mensaje:$('#cf_msg').value.trim(),createdAt:Date.now()};
+  if(!p.nombre||!p.tel){toast('Escribe al menos tu nombre y celular.');return;}
+  if(fbReady)db.ref('prospectos').push(p);
+  ['cf_nombre','cf_tel','cf_email','cf_msg'].forEach(id=>$('#'+id).value='');
+  toast('¡Mensaje enviado! Linda te contactará pronto.');
+  window.open(waLink(`Hola Linda, soy ${p.nombre}. ${p.mensaje}`),'_blank');
+}
+
+/* =====================================================================
+   TESTIMONIOS (público)
+   ===================================================================== */
+let tlist=[],tidx=0,ttimer=null;
+function loadTestimonios(){
+  if(!fbReady)return;
+  db.ref('testimonios').on('value',s=>{
+    tlist=[];s.forEach(c=>{const v=c.val();if(v.aprobado)tlist.push(v);});
+    renderTestimonio();
+  });
+}
+function renderTestimonio(){
+  if(!tlist.length)return;
+  const dots=$('#tdots');dots.innerHTML='';
+  tlist.forEach((_,i)=>{const b=document.createElement('button');if(i===tidx)b.classList.add('on');b.onclick=()=>{tidx=i;showT();};dots.appendChild(b);});
+  showT();clearInterval(ttimer);ttimer=setInterval(()=>{tidx=(tidx+1)%tlist.length;showT();},6000);
+}
+function showT(){
+  const t=tlist[tidx];if(!t)return;
+  $('#tquote').textContent='“'+t.texto+'”';$('#tcite').textContent='— '+t.nombre;
+  $('#tcar .stars').textContent='★★★★★'.slice(0,t.estrellas||5);
+  $$('#tdots button').forEach((b,i)=>b.classList.toggle('on',i===tidx));
+}
+
+/* =====================================================================
+   ADMIN
+   ===================================================================== */
+function openAdmin(){
+  openOverlay('ovAdmin');
+  if(!fbReady){$('#adminLogin').innerHTML='<p class="muted">Configura Firebase (bloque de configuración) para activar el panel.</p>';return;}
+  auth.onAuthStateChanged(u=>{
+    if(u && u.email===ADMIN_EMAIL){$('#adminLogin').classList.add('hidden');$('#adminPanel').classList.remove('hidden');adminLoad();}
+    else{$('#adminLogin').classList.remove('hidden');$('#adminPanel').classList.add('hidden');}
+  });
+}
+function adminLogin(){
+  const p=new firebase.auth.GoogleAuthProvider();
+  auth.signInWithPopup(p).then(r=>{
+    if(r.user.email!==ADMIN_EMAIL){toast('Ese correo no es el administrador.');auth.signOut();}
+  }).catch(()=>toast('No se pudo iniciar sesión.'));
+}
+function adminTab(t){
+  $$('.admin-tabs button').forEach(b=>b.classList.toggle('on',b.dataset.tab===t));
+  ['citas','prospectos','testimonios','config'].forEach(x=>$('#tab-'+x).classList.toggle('hidden',x!==t));
+}
+function adminLoad(){adminCitas();adminProspectos();adminTestimonios();adminConfig();}
+
+function adminCitas(){
+  db.ref('citas').orderByChild('createdAt').on('value',s=>{
+    const arr=[];s.forEach(c=>arr.push(c.val()));arr.reverse();
+    const cont=$('#tab-citas');
+    if(!arr.length){cont.innerHTML='<p class="muted">Aún no hay citas.</p>';return;}
+    cont.innerHTML=arr.map(c=>{
+      const cls=c.estado==='confirmada'?'conf':c.estado==='cancelada'?'canc':'pend';
+      return `<div class="cita">
+        <div class="top">
+          <div><b>${c.nombre}</b> · ${c.edad} años · ${c.sexo}<br>
+          <span class="muted">${c.modalidad} — ${c.fecha} ${c.hora}</span><br>
+          <span class="muted">📞 ${c.tel} · ✉️ ${c.email}</span><br>
+          <span class="muted">Motivo: ${c.motivo||'—'}</span></div>
+          <span class="tag ${cls}">${c.estado}</span>
+        </div>
+        <div class="muted" style="font-size:.8rem;margin-top:.4rem">Folio ${c.folio}</div>
+        <div class="acts">
+          ${c.estado!=='confirmada'?`<button class="mini go" onclick="setEstado('${c.folio}','confirmada')">✓ Confirmar pago</button>`:''}
+          ${c.estado!=='cancelada'?`<button class="mini warn" onclick="setEstado('${c.folio}','cancelada')">Cancelar</button>`:''}
+          <button class="mini" onclick="openHistoria('${c.folio}')">Ver historia clínica</button>
+          <a class="mini" href="${waLink('Hola '+c.nombre)}" target="_blank">WhatsApp</a>
+        </div>
+      </div>`;
+    }).join('');
+  });
+}
+function setEstado(folio,estado){db.ref('citas/'+folio+'/estado').set(estado).then(()=>toast('Cita '+estado));}
+
+function adminProspectos(){
+  db.ref('prospectos').orderByChild('createdAt').on('value',s=>{
+    const arr=[];s.forEach(c=>arr.push(c.val()));arr.reverse();
+    const cont=$('#tab-prospectos');
+    cont.innerHTML=arr.length?arr.map(p=>`<div class="cita"><div class="top"><div><b>${p.nombre}</b><br><span class="muted">📞 ${p.tel} ${p.email?'· ✉️ '+p.email:''}</span><br>${p.mensaje||''}</div></div><div class="acts"><a class="mini go" href="${waLink('Hola '+p.nombre)}" target="_blank">Responder por WhatsApp</a></div></div>`).join(''):'<p class="muted">Sin mensajes.</p>';
+  });
+}
+
+function adminTestimonios(){
+  const cont=$('#tab-testimonios');
+  db.ref('testimonios').on('value',s=>{
+    const arr=[];s.forEach(c=>arr.push({k:c.key,...c.val()}));
+    let html=`<div class="cita"><b>Agregar testimonio</b>
+      <div class="field" style="margin-top:.6rem"><input id="nt_nombre" placeholder="Nombre del paciente"></div>
+      <div class="field"><textarea id="nt_texto" placeholder="Testimonio"></textarea></div>
+      <div class="field"><label>Estrellas</label><select id="nt_estrellas"><option value="5">★★★★★</option><option value="4">★★★★</option><option value="3">★★★</option></select></div>
+      <button class="mini go" onclick="addTestimonio()">Publicar</button></div>`;
+    html+=arr.length?arr.map(t=>`<div class="cita"><div class="top"><div><b>${t.nombre}</b> ${'★'.repeat(t.estrellas||5)}<br>${t.texto}</div><span class="tag ${t.aprobado?'conf':'pend'}">${t.aprobado?'visible':'oculto'}</span></div><div class="acts"><button class="mini go" onclick="toggleTest('${t.k}',${!t.aprobado})">${t.aprobado?'Ocultar':'Mostrar'}</button><button class="mini warn" onclick="delTest('${t.k}')">Eliminar</button></div></div>`).join(''):'';
+    cont.innerHTML=html;
+  });
+}
+function addTestimonio(){
+  const nombre=$('#nt_nombre').value.trim(),texto=$('#nt_texto').value.trim();
+  if(!nombre||!texto){toast('Escribe nombre y testimonio.');return;}
+  db.ref('testimonios').push({nombre,texto,estrellas:+$('#nt_estrellas').value,aprobado:true});
+  toast('Testimonio publicado.');
+}
+function toggleTest(k,v){db.ref('testimonios/'+k+'/aprobado').set(v);}
+function delTest(k){if(confirm('¿Eliminar testimonio?'))db.ref('testimonios/'+k).remove();}
+
+function adminConfig(){
+  const cont=$('#tab-config');
+  cont.innerHTML=`
+    <div class="cita"><b>Datos de pago (transferencia)</b>
+      <div class="field" style="margin-top:.6rem"><label>Monto de la consulta</label><input id="cfg_precio" value="${CONFIG.precioConsulta}"></div>
+      <div class="field"><label>Banco</label><input id="cfg_banco" value="${CONFIG.banco}"></div>
+      <div class="field"><label>Titular</label><input id="cfg_titular" value="${CONFIG.titular}"></div>
+      <div class="field"><label>CLABE</label><input id="cfg_clabe" value="${CONFIG.clabe}"></div>
+      <div class="field"><label>Tarjeta (opcional)</label><input id="cfg_tarjeta" value="${CONFIG.tarjeta||''}"></div>
+    </div>
+    <div class="cita"><b>Disponibilidad</b>
+      <div class="field" style="margin-top:.6rem"><label>Días que atiendes</label>
+        <div class="radio-row" id="cfg_dias">
+          ${['Dom','Lun','Mar','Mié','Jue','Vie','Sáb'].map((d,i)=>`<label><input type="checkbox" value="${i}" ${CONFIG.dias.includes(i)?'checked':''}> ${d}</label>`).join('')}
+        </div>
+      </div>
+      <div class="field"><label>Horarios disponibles (separados por coma)</label><input id="cfg_horarios" value="${CONFIG.horarios.join(', ')}"></div>
+    </div>
+    <button class="btn btn-primary btn-block" onclick="saveConfig()">Guardar configuración</button>
+    <button class="btn btn-ghost btn-block" style="margin-top:.6rem" onclick="auth.signOut();closeOverlay('ovAdmin')">Cerrar sesión</button>
+  `;
+}
+function saveConfig(){
+  const dias=[...$$('#cfg_dias input:checked')].map(c=>+c.value);
+  const cfg={
+    precioConsulta:$('#cfg_precio').value,banco:$('#cfg_banco').value,
+    titular:$('#cfg_titular').value,clabe:$('#cfg_clabe').value,tarjeta:$('#cfg_tarjeta').value,
+    dias:dias.length?dias:[1,2,3,4,5],
+    horarios:$('#cfg_horarios').value.split(',').map(s=>s.trim()).filter(Boolean)
+  };
+  db.ref('config').set(cfg).then(()=>toast('Configuración guardada.'));
+}
+
+/* ---------- arranque ---------- */
+loadConfig();loadTestimonios();
+</script>
+</body>
+</html>
